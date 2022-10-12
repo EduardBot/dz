@@ -1,0 +1,94 @@
+@media screen and (max-width: 1040px) {
+    .our_clients_logo ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .can_we_work__item_wrap {
+        max-width: 220px;
+    }
+    .can_we_work__text {
+        max-width: 118px;
+    }
+}
+@media screen and (max-width: 991px) {
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .big_background {
+        padding: 10px 0px;
+    }
+    .margin_top_170 {
+        margin-top: 100px;
+    }
+    /* ====== About Us ====== */
+
+    .about_us_pic_left img {
+        display: none;
+    }
+    .about_us_pic_left_img {
+        display: block;
+        max-width: 540px;
+        height: 100%;
+        background-image: url("../img/fotoup.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .about_us_text {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .about_us_pic_right img {
+        max-width: 100%;
+    }
+    .arrow_right_block::after {
+        display: none;
+    }
+    .about_us_text p {
+        margin-top: 0;
+    }
+    .padding_left {
+        padding-left: 120px;
+    }
+    .big_background__wrap_padding_right {
+        display: block;
+    }
+
+    /* === Can we work === */
+    .can_we_work__list_wrap {
+        background-image: none;
+        z-index: 10;
+        position: relative;
+        margin-left: 50px;
+    }
+    .can_we_work__list_wrap_bcg {
+        display: block;
+        z-index: -1;
+        position: absolute;
+        top: 3em;
+        left: 4.5em;
+        max-width: 600px;
+    }
+    .can_we_work__item_wrap {
+        width: 150px;
+    }
+    .can_we_work__item_wrap + .can_we_work__item_wrap {
+        padding-left: 0;
+    }
+    .can_we_work__text {
+        max-width: 118px;
+    }
+}
+@media screen and (max-width: 790px) {
+    .margin_top_170 {
+        margin-top: 0;
+    }
+}
