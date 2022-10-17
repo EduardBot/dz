@@ -177,8 +177,7 @@ h1 {
   line-height: 25.2px;
 }
 .about_us_services .about_us_text p {
-  width: 357px;
-
+  max-width: 357px;
 }
 .bcg_gray {
   background: #F5F5F5;
@@ -297,8 +296,9 @@ h1 {
   padding-bottom: 37px;
 }
 .plintus_container {
-  max-width: 1110px;
+  max-width: 1140px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .plintus_container_flex {
   display: flex;
@@ -372,6 +372,7 @@ h1 {
   justify-content: flex-start;
   margin: 0px;
   padding: 0px;
+  gap: 1px;
 }
 .plintus_list li {
   /*width: 158px;*/
@@ -386,9 +387,6 @@ h1 {
   line-height: 15.4px;
   font-weight: 600;
   color: rgba(56, 56, 56, 0.7);
-}
-.plintus_list li + li {
-  margin-left: 1px;
 }
 .plintus_list li:first-child {
   background-color: #CAEEB9;
@@ -468,19 +466,19 @@ h1 {
 }
 .big_background__container {
   max-width: 1470px;
-  padding: 0px 15px;
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
+  background-color: #d97676;
 }
 .big_background__img {
   width: 50%;
 }
 .big_background__content {
   width: 50%;
-  display: flex;
-  align-items: center;
   background-color: #F6F6F6;
+  padding-top: 57px;
+  padding-bottom: 41px;
 }
 .big_background__wrap {
   max-width: 515px;
@@ -492,7 +490,8 @@ h1 {
   padding-left: 96px;
 }
 .big_background__wrap_padding_right {
-  display: none;
+  display: flex;
+  justify-content: end;
   padding-right: 96px;
 }
 .big_background_h2_wrap {
@@ -582,8 +581,9 @@ h1 {
   padding: 60px 0px 101px;
 }
 .can_we_work__container {
-  max-width: 1098px;
+  max-width: 1128px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .can_we_work__flex {
   display: flex;
@@ -606,7 +606,6 @@ h1 {
 }
 /*------------------------------*/
 .can_we_work__list_wrap {
-  max-width: 1098px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -619,11 +618,8 @@ h1 {
   display: none;
 }
 .can_we_work__item_wrap {
-  width: 228px;
+  max-width: 228px;
   height: 161px;
-}
-.can_we_work__item_wrap + .can_we_work__item_wrap {
-  padding-left: 42px;
 }
 .can_we_work__item_wrap img {
   margin-bottom: 23px;
@@ -717,9 +713,8 @@ h1 {
 .btn:hover {
   background-color: #cbff82;
   color: #383838;
-  font-size: 16px;
   transition: background-color 0.5s, transform .4s;
-  outline: 2px solid #383838;
+  outline: 2px solid #514b4b;
   outline-offset: 2px solid #383838;
 }
 #btn:hover {
@@ -791,9 +786,6 @@ h1 {
   align-items: flex-start;
   padding-left: 96px;
   padding-top: 70px;
-}
-.map__info_column_wrap {
-  
 }
 .map__title_wrap_row {
   display: inline-flex;
@@ -947,3 +939,4 @@ nav {
   line-height: 12.25px;
   color: #383838;
 }
+
