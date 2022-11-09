@@ -4,10 +4,25 @@
         flex-wrap: wrap;
     }
     header {
+        padding: 0;
+    }
+    header .logo_text {
         display: none;
     }
+    header .logo_img {
+        max-width: 120px;
+    }
     footer {
+        padding: 0;
+    }
+    .footer__logo_text {
         display: none;
+    }
+    .footer__logo img {
+        max-width: 120px;
+    }
+    .footer__wrapper {
+        padding-bottom: 10px;
     }
     .can_we_work__item_wrap {
         max-width: 220px;
@@ -15,19 +30,66 @@
     .can_we_work__text {
         max-width: 118px;
     }
+    .arrow_right_left_block::before {
+        display: none;
+    }
+    .big_background__wrap {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 auto;
+        max-width: 450px;
+    }
+    .big_background__content {
+        padding-left: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .big_background__wrap_padding_left {
+        padding-left: 0;
+    }
+    .big_background__wrap_padding_right {
+        padding-right: 0;
+    }
+    .padding_left {
+        padding-left: 15px;
+    }
+    .plintus_card_info {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .map__info_column {
+        padding-top: 20px;
+        padding-left: 50px;
+    }
 }
 @media screen and (max-width: 991px) {
-    header {
-        display: none;
-    }
-    footer {
-        display: none;
-    }
-    .big_background {
-        padding: 10px 0px;
-    }
     .margin_top_170 {
         margin-top: 100px;
+    }
+    .our_clients_logo {
+        padding-top: 20px;
+    }
+    .plintus_menu {
+        padding-top: 20px;
+    }
+    /* padding у секций */
+    .about_us {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .our_clients {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .plintus {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .big_background {
+        padding: 20px 0px;
+    }
+    .can_we_work__bcg {
+        padding: 20px 0;
     }
     /* ====== About Us ====== */
 
@@ -55,36 +117,26 @@
     .about_us_text p {
         margin-top: 0;
     }
-    .padding_left {
-        padding-left: 120px;
-    }
     .big_background__wrap_padding_right {
         display: block;
+    }
+    .big_background__wrap {
+        align-items: center;
     }
 
     /* === Can we work === */
     .can_we_work__list_wrap {
-        background-image: none;
-        z-index: 10;
-        position: relative;
-        margin-left: 50px;
-    }
-    .can_we_work__list_wrap_bcg {
-        display: block;
-        z-index: -1;
-        position: absolute;
-        top: 3em;
-        left: 4.5em;
-        max-width: 600px;
-    }
-    .can_we_work__item_wrap {
-        width: 150px;
+        background-position: 25% 28%;
     }
     .can_we_work__item_wrap + .can_we_work__item_wrap {
         padding-left: 0;
     }
     .can_we_work__text {
         max-width: 118px;
+    }
+    .end_position {
+        position: relative;
+        right: -2.5em;
     }
 }
 @media screen and (max-width: 801px) {
@@ -114,9 +166,13 @@
     }
 
     /* ПЛИНТУСЫ */
+    .plintus {
+        padding-bottom: 20px;
+    }
     .plintus_content {
         flex-direction: column;
     }
+    
     .plintus_card_info {
         max-width: 100%;
         padding-left: 15px;
@@ -137,7 +193,29 @@
     .plintus_list li {
         flex: 0 1 33%;
     }
-
+    .plintus_card_info_wrap {
+        align-items: center;
+    }
+    .plintus_content_h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .description {
+        max-width: 600px;
+    }
+    .description p {
+        margin-bottom: 20px;
+    }
+    .description p:last-child {
+        margin-bottom: 30px;
+    }
+    .download_pdf_flex {
+        margin-bottom: 20px;
+    }
+    .download_xlsx_flex {
+        margin-bottom: 20px;
+    }
     /* === Can we work === */
     .can_we_work__bcg {
         padding: 30px 0;
@@ -146,12 +224,10 @@
         margin-bottom: 25px;
     }
     .can_we_work__list_wrap {
+        background-image: none;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
-    }
-    .can_we_work__list_wrap_bcg {
-        display: none;
+        gap: 12px;
     }
     .big_word::first-letter {
         font-size: 25px;
@@ -160,6 +236,9 @@
     .can_we_work__item_wrap {
         height: auto;
         min-height: 179px;
+    }
+    .arrow_left::before, .arrow_right::after {
+        display: none;
     }
 
     /* === Контакты === */
@@ -180,5 +259,177 @@
     }
     .map__title_wrap_row {
         margin-bottom: 30px;
+    }
+
+    /* === Все Big'и === */
+    .big_background__container {
+        flex-direction: column;
+        padding: 0;
+    }
+    .order_1 {
+        order: 0;
+    }
+    .order_2 {
+        order: 0;
+    }
+    .big_background__img {
+        width: 100%;
+        order: 5;
+    }
+    .big_background__img>img {
+        width: 100%;
+    }
+    .big_background__content {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .big_background__wrap {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .big_background__wrap_padding_left {
+        padding-left: 0;
+    }
+    .big_background__wrap_padding_right {
+        padding-right: 0;
+    }
+    .big_background__wrap_description p {
+        margin-bottom: 20px;
+    }
+    .big_background__wrap_description p:last-child {
+        margin-bottom: 20px;
+    }
+    .big_background_h2_wrap {
+        margin-bottom: 20px;
+    }
+    .padding_left {
+        padding-left: 0;
+    }
+    .arrow_right_left_block::before {
+        display: none;
+    }
+    .big_background__wrap_description_info {
+        text-align: center;
+    }
+
+    /* === Форма обратной связи === */
+    .label {
+        display: flex;
+        padding: 5px 5px 5px 21px;
+        background-color: #00000026;
+    }
+    .fake {
+        display: block;
+        padding-right: 18px;
+    }
+    .text {
+        display: block;
+    }
+
+    /* КАРТА */
+    .map__inner {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .map__bg {
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    /* HEADER */
+    .header_nav_link {
+        margin-left: 20px;
+    }
+    .header_nav_link_tel {
+        margin-left: 25px;
+    }
+
+    /*FOOTER*/
+    .footer__nav_link {
+        margin-left: 20px;
+    }
+    .footer_nav_tel {
+        margin-left: 20px;
+      }
+}
+
+@media screen and (max-width: 571px){
+    /* HEADER */
+    .header_wrapper {
+        position: relative;
+    }
+    #menu {
+        width: 50px;
+        display: inline-block;
+        border: none;
+        padding: 5px 8px;
+        margin-left: 50px;
+        border-radius: 20px;
+    }
+    .header_nav {
+        padding: 15px;
+        width: 300px;
+        position: absolute;
+        bottom: -165px;
+        right: 0;
+        flex-direction: column;
+        display: block;
+        background-color: #fff;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.519);
+    }
+    .header_nav li {
+        height: 40px;
+        border-bottom: 1px solid;
+        text-align: center;
+        margin-left: 0;
+        padding-top: 10px;
+    }
+    .header_nav li:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+    .show {
+        display: none;
+    }
+
+    /* FOOTER */
+    .footer__wrapper {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    .footer__rights__reserved {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    .footer__rights__reserved_text {
+        margin-right: 0;
+    }
+    .footer__logo_link {
+        padding-right: 0;
+    }
+    .margin_none {
+        margin-left: 0;
+    }
+    .footer_nav_tel {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .big_background__wrap_download_link {
+        max-width: 190px;
+        align-items: center;
+    }
+    .big_background__wrap_a{
+        max-width: 145px;
     }
 }
