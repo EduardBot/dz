@@ -44,3 +44,19 @@ headers.forEach(function(item){
         this.nextElementSibling.classList.toggle("hidden");
     })
 }) */
+
+const tabHeaders = document.querySelectorAll('[data-tab]');
+const contentBoxes = document.querySelectorAll('[data-tab-content]');
+
+tabHeaders.forEach(function (item) {
+    item.addEventListener('click', function () {
+        // скрыть все contentBox
+        contentBoxes.forEach(function (item) {
+            item.classList.add('content_hidden');
+        });
+        // выбрать нужный contentBox и показать его
+        const contentBox = document.querySelector('#' + this.dataset.tab);
+        console.log(contentBox)
+        contentBox.classList.remove('content_hidden');
+    });
+});

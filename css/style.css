@@ -392,7 +392,6 @@ h1 {
   gap: 1px;
 }
 .plintus_list li {
-  /*width: 158px;*/
   min-height: 71px;
   display: flex;
   flex: 0 1 20%;
@@ -404,22 +403,26 @@ h1 {
   line-height: 15.4px;
   font-weight: 600;
   color: rgba(56, 56, 56, 0.7);
+  cursor: pointer;
 }
-.plintus_list li:first-child {
+.active{
   background-color: #CAEEB9;
 }
-
 /* -----  */
 
 .plintus_content {
   border: 1px solid #E5E5E5;
   display: flex;
 }
+.plintus_content_wrap {
+  width: 50%;
+}
 .plintus_content img {
-  max-width: 50%;
+  width: 100%;
+  height: 100%;
 }
 .plintus_card_info {
-  max-width: 50%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -967,6 +970,8 @@ nav {
   color: #383838;
 }
 
+
+/* =======*/
 
 
 .list_header {
