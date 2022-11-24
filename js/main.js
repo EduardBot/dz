@@ -50,13 +50,20 @@ const contentBoxes = document.querySelectorAll('[data-tab-content]');
 
 tabHeaders.forEach(function (item) {
     item.addEventListener('click', function () {
+        // убрать все классы 'active'
+        tabHeaders.forEach(function (item) {
+            item.classList.remove('active');
+        });
+        // подставить 'active' на нажатый таб
+        this.classList.add('active');
+
         // скрыть все contentBox
         contentBoxes.forEach(function (item) {
             item.classList.add('content_hidden');
         });
         // выбрать нужный contentBox и показать его
         const contentBox = document.querySelector('#' + this.dataset.tab);
-        console.log(contentBox)
         contentBox.classList.remove('content_hidden');
     });
 });
+

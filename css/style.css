@@ -391,7 +391,7 @@ h1 {
   padding: 0px;
   gap: 1px;
 }
-.plintus_list li {
+.plintus_list__item {
   min-height: 71px;
   display: flex;
   flex: 0 1 20%;
