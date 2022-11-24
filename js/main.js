@@ -36,15 +36,6 @@ for (let anchor of anchors) {
         })
     })
 }
- // АККОРДЕОН
-/*const headers = document.querySelectorAll("[data-name='accordeon_title']");
-
-headers.forEach(function(item){
-    item.addEventListener("click", function (){
-        this.nextElementSibling.classList.toggle("hidden");
-    })
-}) */
-
 const tabHeaders = document.querySelectorAll('[data-tab]');
 const contentBoxes = document.querySelectorAll('[data-tab-content]');
 
