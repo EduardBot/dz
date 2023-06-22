@@ -36,6 +36,7 @@ for (let anchor of anchors) {
         })
     })
 }
+// Табы
 const tabHeaders = document.querySelectorAll('[data-tab]');
 const contentBoxes = document.querySelectorAll('[data-tab-content]');
 
